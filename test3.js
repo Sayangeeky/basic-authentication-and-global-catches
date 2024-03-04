@@ -37,7 +37,9 @@ app.use((err, req, res, next) => {
     })
 })
 
-app.listen(3003);
+app.listen(3003, ()=>{
+    console.log("server started");
+});
 
 //middlewares just make a function with the parameters req res next or use app.use() and do the logic there and call it in the app.get or whereever neede
 
